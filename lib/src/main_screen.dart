@@ -8,7 +8,7 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text('Rick and Morty'), elevation: 10),
+        appBar: AppBar(title: const Text('Pokedex'), elevation: 10),
         body: const Center());
   }
 }
