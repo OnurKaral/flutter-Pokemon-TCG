@@ -5,6 +5,7 @@
 
 version: 2
 updates:
-    - package_manager: "java:gradle"
-    directory: "/gradle"
-    update_schedule: "daily"
+   - package-ecosystem: "gradle" 
+    directory: "/" 
+    schedule:
+      interval: "daily"
