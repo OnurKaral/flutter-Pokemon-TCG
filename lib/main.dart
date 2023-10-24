@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_pokemon_tcg/src/core/router/app_router.dart';
 
 Future<void> main() async {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+
+  final _appRouter = AppRouter();
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: _appRouter.config(),
       title: 'Rick And Morty',
       theme: ThemeData(
         colorScheme: const ColorScheme.light(),
