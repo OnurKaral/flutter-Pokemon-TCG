@@ -5,7 +5,6 @@
 
 version: 2
 updates:
-  - package-ecosystem: gradle # See documentation for possible values
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "weekly"
+    - package_manager: "java:gradle"
+    directory: "/gradle"
+    update_schedule: "daily"
